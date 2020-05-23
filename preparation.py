@@ -107,7 +107,7 @@ def waifu2x_vulkan_ncnn_preparation():
     os.chdir(waifu2x_vulkan)
 
     build_dir = os.path.join(waifu2x_vulkan, "build")
-    os.makedirs(models_dir, exist_ok=True)
+    os.makedirs(build_dir, exist_ok=True)
 
     os.system("wget -O vulkansdk.tar.gz https://sdk.lunarg.com/sdk/download/1.2.135.0/linux/vulkansdk-linux-x86_64-1.2.135.0.tar.gz")
     os.system("tar -xvf vulkansdk.tar.gz")
